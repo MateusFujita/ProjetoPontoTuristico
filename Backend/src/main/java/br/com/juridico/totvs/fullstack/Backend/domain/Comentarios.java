@@ -18,12 +18,52 @@ public class Comentarios {
         this.aprovacao = aprovacao;
     }    
 
-    public Comentarios(PaisDTO paisDTO){
-        this.id = paisDTO.getId();
-        this.nome = paisDTO.getNome();
-        this.sigla = paisDTO.getSigla();
-        this.continente = paisDTO.getContinente();
-        this.ddi = paisDTO.getDdi();
-    }    
-    //Continuar em  casa
+    public Comentarios(ComentariosDTO ComentariosDTO){
+        this.id = ComentariosDTO.getId();
+        this.nome = ComentariosDTO.getNome();
+        this.estado = ComentariosDTO.getSigla();
+        this.comentarios = ComentariosDTO.getContinente();
+        this.aprovacao = ComentariosDTO.getDdi();
+    }  
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(string nome) {
+        this.nome = nome;
+    }  
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    public void setSigla(string sigla) {
+        this.sigla = sigla;
+    }   
+
+    public String getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(string comentarios) {
+        this.comentarios = comentarios;
+    } 
+
+     public String getAprovacao() {
+        return aprovacao;
+    }
+
+    public void setAprovacao(boolean aprovacao) {
+        this.aprovacao = aprovacao;
+    }            
+    
 }
